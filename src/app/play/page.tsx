@@ -793,7 +793,7 @@ function PlayPageClient() {
     // 左箭头 = 快退
     if (!e.altKey && e.key === 'ArrowLeft') {
       if (artPlayerRef.current && artPlayerRef.current.currentTime > 5) {
-        artPlayerRef.current.currentTime -= 10;
+        artPlayerRef.current.currentTime -= 5;
         e.preventDefault();
       }
     }
@@ -804,7 +804,7 @@ function PlayPageClient() {
         artPlayerRef.current &&
         artPlayerRef.current.currentTime < artPlayerRef.current.duration - 5
       ) {
-        artPlayerRef.current.currentTime += 10;
+        artPlayerRef.current.currentTime += 5;
         e.preventDefault();
       }
     }
